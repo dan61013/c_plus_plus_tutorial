@@ -126,13 +126,27 @@ escape sequence char (character)
 * \a: 電腦的嗶聲
 * \0: 空白
 
-### Type coerction 強制轉型
-可以在run-time時，加入int指定轉換輸出type
-
 ### 遞迴
 1. Post increment: 後置遞
 2. Pre increment: 前置遞
 
-### Console
+### console
 
 * 連續輸出: cascading
+
+## Ch03
+
+### cin
+* 與cin搭配: Extraction operator
+* 讓使用者能夠清楚知道目前的I/O，Maximize user friendly Input Output
+
+### 資料轉型
+1. Type coercion: 自動轉型
+2. Type casting: 手動轉型
+
+### Control Structures 控制結構
+flow control主要有兩個方式:
+1. Selection: select statements(聲明)，用敘述句來執行
+2. Repetition
+
+@763
