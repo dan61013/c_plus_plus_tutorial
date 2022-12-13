@@ -147,6 +147,6 @@ escape sequence char (character)
 ### Control Structures 控制結構
 flow control主要有兩個方式:
 1. Selection: select statements(聲明)，用敘述句來執行
+   * Boolean expression (布林表達式)，其中很重要的是: Relational expressions (關係表達式)
+   * 用許多表示式比較operands (Math: 運算數)
 2. Repetition
-
-@763
