@@ -1,6 +1,7 @@
 # C 基礎學習
 
 [參考資源](https://leolistudio.com/how-to-use-vscode-write-cpp/)
+[交大 - 計算機概論與程式設計 Introduction to Computers and Programming](http://ocw.nctu.edu.tw/course_detail.php?bgid=0&gid=0&nid=192)
 
 ## 使用工具:
 1. Visual Stdio Code
@@ -18,7 +19,9 @@
 
 ---
 
-## 變數名稱規則:
+## 基礎練習
+
+### 變數名稱規則:
 
 1. 開頭必為英文字母
 2. 名稱中不能含有 .
@@ -26,17 +29,28 @@
 4. 不使用運算符&保留字元
 5. 名稱不超過255字元
 
-## 資料型態、所需的記憶體:
+### 資料型態、所需的記憶體:
 ※ 1byte=8bit
-1. 字元char: 1byte
-2. 短整數short: 2byte
-3. 整數(16位元)int: 2byte
-4. 整數(32位元)int: 4byte
-5. 長整數long: 4byte
-6. 單精度浮點數float: 4byte
-7. 倍精度浮點數double: 8byte
+1. char: 1byte
+2. unsigned int: 4byte, %u\
+   Range: 0 ~ 4294967295
+3. unsigned short int: 2byte, %hu\
+   Range: 0 ~ 65535
+4. short int: 2byte %hd\
+   Range: -32768 ~ 32767
+5. int: 4byte (Normally), %d\
+   Range: -2147483648~2147483647
+6. long int: 4byte, %ld\
+   Range: -2147483648~2147483647
+7. float: 4byte, %f\
+   Range: 1.2E-38 ~ 3.4E+38
+8. double: 8byte, %lf\
+   Range: 1.7E-308 ~ 1.7E+308
+9. long double: 16byte, %Lf\
+   Range: 3.4E-4932 ~ 1.1E+4932
+10. boolean: 8byte, true or false
 
-## printf("控制字串", 引述);
+### printf("控制字串", 引述);
 
 1. 整數: %d
 2. 浮點數: %f
@@ -45,7 +59,80 @@
 5. 字串: %s
 6. 換行: \n
 
-## scanf("控制字串", 引數);
+### scanf("控制字串", 引數);
 
 1. 控制字串: 可輸入多個變數 (多變數以空格區分)
 2. 引數: 把想儲存的變數名稱前加&符號
+
+## Ch01
+
+Introduction to Computers and Programming
+
+### 低階語言
+共有兩種:
+1. Machine Language (機器語言)
+2. Assembly Language (組合語言)
+
+### 高階語言
+例如: C, C++, C#, Python, Java... 我們常用的語言
+
+### OOP 物件導向 (Object Oriented Programming)
+
+1. 資料物件: 把許多資料，組裝成一個整體來看
+
+### Algorithm 演算法
+```
+定義: Step by step sequence of instruction, 一步一步的指令序列
+```
+流程:
+1. Terminal 端點: 開始或結束點
+2. Input/Output(I/O): 輸入輸出
+3. Process: Procedure, 處理程序
+4. Flow Line: 指向
+5. Desion: 決定或決策
+6. Loop: 迴圈、遞增遞減，大量重複做一樣的事情
+7. Predefined: 預先定義好的一個process
+8. Connector: 連接
+
+## Ch02
+
+### Variable 變數
+* 變數其實是Memory location，會被assignment到一個記憶體位置
+* Declare be for use, 宣告後才能使用
+* Alphabetical: 按字母順序
+* Built in: 內建
+* Programming-Created data type(程式設計語言), 並自己定義 acceptable values
+* Type mismatches: 資料型態錯誤
+* 如果在int輸入浮點數，則會產生Implicit(隱含的)，或是Automatic(自動的)，自動型別轉換
+
+### Combination rule
+identifiers要使用有意義的名稱
+* Case sensitivity: 敏感的語言，大小寫英文都視為相同變數，例如: C++, Python, Java
+
+### sizeof() -> 讀取object記憶體大小
+
+### Literals
+解釋: 常數，包含數值、字元、字串，在程式裡不會改變的，都稱之為常數
+
+稱為Literal的原因: Programming literal type
+
+### Escape sequences 逃脫字元
+escape sequence char (character)
+* \n: 換行
+* \t: Tab
+* \\\\: \
+* \": "
+* \r: 游標移回行首，Carriage return
+* \a: 電腦的嗶聲
+* \0: 空白
+
+### Type coerction 強制轉型
+可以在run-time時，加入int指定轉換輸出type
+
+### 遞迴
+1. Post increment: 後置遞
+2. Pre increment: 前置遞
+
+### Console
+
+* 連續輸出: cascading

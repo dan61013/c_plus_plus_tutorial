@@ -2,8 +2,18 @@
 using namespace std;
 
 int main() {
-    cout << "I am Dan. \nMy age is 27. " << endl;
-    cout << "I am Dan. << enld << My age is 27. ";
-    
+    int a;
+    int b;
+    int sum;
+
+    cout << "Enter the first integer: " << endl;
+    cin >> a;
+
+    cout << "Enter the second integer: " << endl;
+    cin >> b;
+
+    sum = a + b;
+    cout << "Their sum is " << sum << endl;
+
     return 0;
 }
