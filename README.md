@@ -1,6 +1,6 @@
 # C 基礎學習
 
-[參考資源](https://leolistudio.com/how-to-use-vscode-write-cpp/)
+[VScode安裝C/C++教學](https://leolistudio.com/how-to-use-vscode-write-cpp/)
 [交大 - 計算機概論與程式設計 Introduction to Computers and Programming](http://ocw.nctu.edu.tw/course_detail.php?bgid=0&gid=0&nid=192)
 
 ## 使用工具:
@@ -150,3 +150,26 @@ flow control主要有兩個方式:
    * Boolean expression (布林表達式)，其中很重要的是: Relational expressions (關係表達式)
    * 用許多表示式比較operands (Math: 運算數)
 2. Repetition
+
+### Boolean Operator
+1. &&: Logical **and**, example: x<5 && x<10
+2. ||: Logical **or**, example: x<5 || x<4
+3. !: Logical **not**, example: !(x<5 && x<10)
+
+## Other
+
+### 直譯/編譯語言
+參考資料: [C++ 30天屠龍記](https://ithelp.ithome.com.tw/articles/10214510)
+
+#### **編譯語言**
+編譯語言會在執行程序時，先透過編譯器將程序編譯成電腦讀得懂的機器碼(machine language)，
+這個文件就是一個執行檔(Unix)，.exe (Windows)，多數為靜態語言
+
+代表: C/C++, R, Rust, Go, Visual Basic, Swift, Obj-C等
+
+#### **直譯語言**
+直譯語言的運行器會將一行一行的程式碼，先後編譯成機器碼，讓程序檢測更靈活(符合人性)，
+本身彈性更大，但緩慢的運行速度，是直譯語言的最大壞處，許多直譯語言的模塊，都是用編譯語言寫成，
+也被認為是Scripting Language
+
+代表: Javascript, Python, Shellscript
