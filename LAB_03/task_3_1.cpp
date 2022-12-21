@@ -11,7 +11,7 @@ int main() {
         cout << "x = " << x << endl;
     }
 
-    if (y == 5)
+    if (y != 5)
     {
         cout << "y = " << y << endl;
     }
