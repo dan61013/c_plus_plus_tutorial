@@ -5,14 +5,14 @@ using namespace std;
 int main()
 {
     int input;
-    int i, j;
+    int i, j; // i: input遞迴變數；j: prime判斷變數
     
     cout << "Enter an integer value: " << endl;
     cin >> input;
 
     cout << "All prime numbers below " << input << " are: " << endl;
 
-    if ((input == 0) or (input == 1))
+    if ((input <= 0) or (input == 1))
     {
         cout << "None" << endl;
     }
@@ -25,16 +25,16 @@ int main()
     }
     else if (input >= 3)
     {
-        cout << "2 3 ";
-        for (i = 2; i <= input; i++)
+        cout << "2 3 "; // input >= 3, 則prime一定會有2 and 3
+        for (i = 2; (i <= input); i++)
         {
-            for (j = 2; j*j <= i; j++)
+            for (j = 2; (j*j <= i); j++)
             {
                 if (i % j == 0)
                 {
                     break;
                 }
-                else if (j+1 > sqrt(i))
+                else if (j + 1 > sqrt(i))
                 {
                     cout << i << ' ';
                 }

@@ -1,5 +1,5 @@
 // https://openhome.cc/Gossip/CppGossip/ifStatement.html
-// if±ø¥ó½m²ß
+// if©_°¸¼Æ§PÂ_
 
 #include <iostream>
 using namespace std;
