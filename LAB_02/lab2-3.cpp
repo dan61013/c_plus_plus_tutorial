@@ -4,17 +4,17 @@ using namespace std;
 
 int main() {
     cout << "The original number is " << 716.54564 << endl;
-    // åˆ—å‡º3ä½æ•¸ 717
+    // ¦C¥X3¦ì¼Æ 717
     cout << "The number with set precision 3 is " << setprecision(3) << 716.54564 << endl;
-    // åˆ—å‡º6ä½æ•¸(åŒ…å«å°æ•¸é») 716.546
+    // ¦C¥X6¦ì¼Æ(¥]§t¤p¼ÆÂI) 716.546
     cout << "The number with set precision 6 is " << setprecision(6) << 716.54564 << endl;
-    // è¨­å®šå¯¬åº¦:10, é¡¯ç¤º6ä½æ•¸ (showpoint -> æœƒé å³å°é½Šï¼Œé è¨­é¡¯ç¤º6å€‹æœ‰æ•ˆæ•¸)
+    // ³]©w¼e«×:10, Åã¥Ü6¦ì¼Æ (showpoint -> ·|¾a¥k¹ï»ô¡A¹w³]Åã¥Ü6­Ó¦³®Ä¼Æ)
     cout << "The number in showpoint decimal notation is " << setw(10) << showpoint << setprecision(6)\
     << 716.54564 << endl;
-    // è¨­å®šå¯¬åº¦:10, fixed -> åªé¡¯ç¤ºå°æ•¸å¾Œ6ä½æ•¸ 716.545640
+    // ³]©w¼e«×:10, fixed -> ¥uÅã¥Ü¤p¼Æ«á6¦ì¼Æ 716.545640
     cout << "The number in fix-point decimal notation is " << setw(10) << fixed << setprecision(6)\
     << 716.54564 << endl;
-    // è¨­å®šå¯¬åº¦:10, scientific -> ä»¥ç§‘å­¸è¨˜è™Ÿé¡¯ç¤º
+    // ³]©w¼e«×:10, scientific -> ¥H¬ì¾Ç°O¸¹Åã¥Ü
     cout << "The number in exponential notation is " << setw(10) << scientific << setprecision(3)\
     << 716.54564 << endl;
 

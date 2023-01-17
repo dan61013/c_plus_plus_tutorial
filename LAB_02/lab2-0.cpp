@@ -2,10 +2,10 @@
 using namespace std;
 
 int main() {
-    int a = 3001, b = 99; // èˆ‡Pythonç›¸åŒï¼Œå¯ä»¥ä¸€è¡Œå‘½åå¤šè®Šæ•¸ & å€¼
-    int var = 2.99; //å› ç‚ºå‹æ…‹æ˜¯intï¼Œæ‰€ä»¥åªæœƒé¡¯ç¤ºå‡º"2"
+    int a = 3001, b = 99; // »PPython¬Û¦P¡A¥i¥H¤@¦æ©R¦W¦hÅÜ¼Æ & ­È
+    int var = 2.99; //¦]¬°«¬ºA¬Oint¡A©Ò¥H¥u·|Åã¥Ü¥X"2"
 
     cout << "a + b = " << a + b << "\nvar = " << var << endl;
-    cout << "sum: " << float(4*3+7/5-25.5) << endl; //ç”¨æ‹¬è™Ÿè½‰æ›è¼¸å‡ºå‹æ…‹ï¼Œrunæ™‚åŸ·è¡Œ
+    cout << "sum: " << float(4*3+7/5-25.5) << endl; //¥Î¬A¸¹Âà´«¿é¥X«¬ºA¡Arun®É°õ¦æ
     return 0;
 }

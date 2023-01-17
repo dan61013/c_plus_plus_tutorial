@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// ié è¨­ç­‰æ–¼10ï¼Œwhileå•Ÿå‹•æ™‚å°±æ»¿è¶³æ¢ä»¶ï¼Œæ‰€ä»¥ä¸æœƒoutputä»»ä½•æ•¸å€¼
+// i¹w³]µ¥©ó10¡Awhile±Ò°Ê®É´Nº¡¨¬±ø¥ó¡A©Ò¥H¤£·|output¥ô¦ó¼Æ­È
 int main() {
     int i;
     i = 10;

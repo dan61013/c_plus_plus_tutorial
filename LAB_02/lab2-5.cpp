@@ -7,13 +7,13 @@ int main() {
 
     intResult = 7/3;
     fltResult = 7/3;
-    cout << intResult << endl; // æ•´æ•¸é™¤æ³•=2#
-    cout << fltResult << endl; // æ•´æ•¸é™¤æ³•=2#
+    cout << intResult << endl; // ¾ã¼Æ°£ªk=2#
+    cout << fltResult << endl; // ¾ã¼Æ°£ªk=2#
 
     intResult = int(12.6/3);
     fltResult = 12.6/3;
-    cout << intResult << endl; // ç”¨intå–å‡ºæ•´æ•¸=4#
-    cout << fltResult << endl; // floatç›¸é™¤å¾Œé¡¯ç¤ºåˆ°å°æ•¸ç¬¬ä¸€ä½=4.2#
+    cout << intResult << endl; // ¥Îint¨ú¥X¾ã¼Æ=4#
+    cout << fltResult << endl; // float¬Û°£«áÅã¥Ü¨ì¤p¼Æ²Ä¤@¦ì=4.2#
 
     return 0;
 }

@@ -12,9 +12,9 @@ int main() {
     cout << "y= " << y << endl;
     // assigment x = 10
     x = 10;
-    cout << "current value of x is " << x++ << endl; // 10, xå…ˆè™•ç†å†++
-    cout << "current value of x is " << ++x << endl; // 12, å‰å¼ x++ = 11, ++x = 12
-    cout << "current value of x is " << x << endl; // ç›´æ¥é¡¯ç¤º x = 12
+    cout << "current value of x is " << x++ << endl; // 10, x¥ı³B²z¦A++
+    cout << "current value of x is " << ++x << endl; // 12, «e¦¡ x++ = 11, ++x = 12
+    cout << "current value of x is " << x << endl; // ª½±µÅã¥Ü x = 12
 
     return 0;
 }

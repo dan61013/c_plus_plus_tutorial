@@ -5,7 +5,7 @@ int main() {
     int x;
     cout << "Please enter one number: " << endl;
     cin >> x;
-    // and ç­‰æ–¼ &&, or ç­‰æ–¼ ||, notç­‰æ–¼ !
+    // and µ¥©ó &&, or µ¥©ó ||, notµ¥©ó !
     if ((x >= 5) and (x < 2))
     {
         cout << "Hit" << endl;

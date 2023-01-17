@@ -5,7 +5,7 @@ using namespace std;
 int main()
 {
     int input;
-    int i, j; // i: inputéè¿´è®Šæ•¸ï¼›j: primeåˆ¤æ–·è®Šæ•¸
+    int i, j; // i: input»¼°jÅÜ¼Æ¡Fj: prime§PÂ_ÅÜ¼Æ
     
     cout << "Enter an integer value: " << endl;
     cin >> input;
@@ -25,7 +25,7 @@ int main()
     }
     else if (input >= 3)
     {
-        cout << "2 3 "; // input >= 3, å‰‡primeä¸€å®šæœƒæœ‰2 and 3
+        cout << "2 3 "; // input >= 3, «hprime¤@©w·|¦³2 and 3
         for (i = 2; (i <= input); i++)
         {
             for (j = 2; (j*j <= i); j++)

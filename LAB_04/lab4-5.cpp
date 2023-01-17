@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-// do while, è‡³å°‘æœƒåŸ·è¡Œä¸€æ¬¡ï¼Œå³ä½¿åˆå§‹å€¼å·²æ»¿è¶³whileæ¢ä»¶(False)
+// do while, ¦Ü¤Ö·|°õ¦æ¤@¦¸¡A§Y¨Ïªì©l­È¤wº¡¨¬while±ø¥ó(False)
 int main() {
     int i;
     i = 10;

@@ -6,9 +6,9 @@ using namespace std;
 int main() {
     float a = 15;
     double b = 25.9876;
-    /* 先用fixed固定成小數點表示法，然後showpoint幫忙補0到小數後第六位，
-    setprecision把小數點固定到第二位，所以小數第三位以後通通刪去，
-    所以setprecision是拿來設定浮點數，不是整數(因為精準)*/
+    /* ����fixed�T�w���p���I���ܪk�A�M��showpoint������0��p�ƫ�Ĥ���A
+    setprecision��p���I�T�w��ĤG��A�ҥH�p�ƲĤT��H��q�q�R�h�A
+    �ҥHsetprecision�O���ӳ]�w�B�I�ơA���O���(�]�����)*/
     cout << fixed << showpoint << setprecision(2) << a << endl;
     cout << fixed << showpoint << setprecision(2) << b << endl;
 

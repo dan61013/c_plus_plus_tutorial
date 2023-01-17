@@ -1,15 +1,19 @@
 # C 基礎學習
 
 [VScode安裝C/C++教學](https://leolistudio.com/how-to-use-vscode-write-cpp/)
+
+[C++與演算法](https://www.csie.ntu.edu.tw/~b98902112/cpp_and_algo/index.html)
+
 [交大 - 計算機概論與程式設計 Introduction to Computers and Programming](http://ocw.nctu.edu.tw/course_detail.php?bgid=0&gid=0&nid=192)
+
 
 ## 使用工具:
 1. Visual Stdio Code
-2. [MinGW Installer](https://zh-tw.osdn.net/projects/mingw/releases/68260)
-3. 將 C:\MinGW\bin 加入環境變數 (看當時安裝的位置決定)
-4. 設定 c_cpp_properties.json，在打開C語言檔案時，按下F1，輸入: C/C++: Edit Configurations (UI)，編譯器路徑 選擇：../g++.exe 的選項，IntelliSense 模式 選擇：gcc-x64 的選項
-5. 設定 tasks.json，按 F1，於命令列輸入：Tasks: Configure Default Build Task，然後選擇：C/C++ g++.exe 建置使用中檔案，即可完成設定
-6. 設定 launch.json， F5，選擇：g++.exe 建置及偵錯使用中的檔案。即可完成所有設定並開始 compile code and show printf message on cmd
+2. [下載MinGW Installer](https://zh-tw.osdn.net/projects/mingw/releases/68260)
+3. 將 **C:\MinGW\bin** 加入Windows環境變數 (依照實際安裝的位置決定)
+4. 設定c_cpp_properties.json，在打開cpp檔案時，按F1，輸入: C/C++: Edit Configurations (UI)，編譯器路徑選擇：../g++.exe 的選項，IntelliSense 模式 選擇：gcc-x64 的選項
+5. 設定tasks.json，按F1，於命令列輸入：Tasks: Configure Default Build Task，然後選擇：C/C++ g++.exe 建置使用中檔案，即可完成設定
+6. 設定launch.json，按F5，選擇：g++.exe 建置及偵錯使用中的檔案。即可完成所有設定並開始 compile code and show printf message on cmd
 
 ---
 

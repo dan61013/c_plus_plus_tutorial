@@ -3,27 +3,27 @@ using namespace std;
 
 int main() 
 {
-    // 1. å…ˆå®šç¾©å¥½è¼¸å…¥çš„æ•¸å€¼åŠè¿´åœˆæ•¸å€¼
+    // 1. ¥ı©w¸q¦n¿é¤Jªº¼Æ­È¤Î°j°é¼Æ­È
     int input;
     int i, j;
-    // æç¤ºuserè¼¸å…¥æ–‡å­—
+    // ´£¥Üuser¿é¤J¤å¦r
     cout << "Enter the size of multiplication table(1~9): " << endl;
     cin >> input;
-    // åˆ¤æ–·inputå°æ–¼ç­‰æ–¼9æ‰åŸ·è¡Œè¿´åœˆ
+    // §PÂ_input¤p©óµ¥©ó9¤~°õ¦æ°j°é
     if (input<=9) 
     {
-        // for i * j (ä¹ä¹ä¹˜æ³•è¡¨)
+        // for i * j (¤E¤E­¼ªkªí)
         for (i=1; (i<=input) ; i++) 
         {
             for (j=1; (j<=input); j++)
             {
-                // ç”¨\t, tabåˆ†æ®µ
+                // ¥Î\t, tab¤À¬q
                 cout << i << " * " << j << " = " << (i*j) << "\t";
             }
             cout << endl;
         }
     }
-    // ä¸åœ¨1~9ç¯„åœå…§çš„é¡¯ç¤ºæç¤º
+    // ¤£¦b1~9½d³ò¤ºªºÅã¥Ü´£¥Ü
     else 
     {
         cout << "The size of multiplication table should be 1~9." << endl;
