@@ -11,11 +11,13 @@ int main()
     fib[1] = 1;
     fib[2] = 1;
 
+    // 預存所有的資料
     for (i=3; i<=70; i++)
     {
         fib[i] = fib[i-1] + fib[i-2];
     }
 
+    // 直接取出數值
     while (cin >> n)
     {
         cout << fib[n] << endl;
