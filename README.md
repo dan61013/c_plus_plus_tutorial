@@ -1,25 +1,60 @@
-# C 基礎學習
+# C/C++ Tutorial
 
-[VScode安裝C/C++教學](https://leolistudio.com/how-to-use-vscode-write-cpp/)
+## 參考資源
 
-[C++與演算法](https://www.csie.ntu.edu.tw/~b98902112/cpp_and_algo/index.html)
+1. [VScode安裝C/C++教學](https://leolistudio.com/how-to-use-vscode-write-cpp/)
 
-[交大 - 計算機概論與程式設計 Introduction to Computers and Programming](http://ocw.nctu.edu.tw/course_detail.php?bgid=0&gid=0&nid=192)
+2. [C++與演算法](https://www.csie.ntu.edu.tw/~b98902112/cpp_and_algo/index.html)
 
-
+3. [交大 - 計算機概論與程式設計 Introduction to Computers and Programming](http://ocw.nctu.edu.tw/course_detail.php?bgid=0&gid=0&nid=192)
+---
 ## 使用工具:
 1. Visual Stdio Code
 2. [下載MinGW Installer](https://zh-tw.osdn.net/projects/mingw/releases/68260)
-3. 將 **C:\MinGW\bin** 加入Windows環境變數 (依照實際安裝的位置決定)
-4. 設定c_cpp_properties.json，在打開cpp檔案時，按F1，輸入: C/C++: Edit Configurations (UI)，編譯器路徑選擇：../g++.exe 的選項，IntelliSense 模式 選擇：gcc-x64 的選項
-5. 設定tasks.json，按F1，於命令列輸入：Tasks: Configure Default Build Task，然後選擇：C/C++ g++.exe 建置使用中檔案，即可完成設定
-6. 設定launch.json，按F5，選擇：g++.exe 建置及偵錯使用中的檔案。即可完成所有設定並開始 compile code and show printf message on cmd
+   1. 將 **C:\MinGW\bin** 加入Windows環境變數
+   2. 設定c_cpp_properties.json，在打開cpp檔案時，按F1，輸入: ```C/C++: Edit Configurations (UI)```，編譯器路徑選擇：../g++.exe 的選項，IntelliSense 模式 選擇：gcc-x64 的選項
+   3. 設定tasks.json，按F1，於命令列輸入: ```Tasks: Configure Default Build Task```，然後選擇: C/C++ g++.exe 建置使用中檔案，即可完成設定
+   4. 設定launch.json，按F5，選擇: g++.exe 建置及偵錯使用中的檔案。即可完成所有設定並開始 compile code and show printf message on cmd
 
 ---
 
+## Table of content
+- [C/C++ Tutorial](#cc-tutorial)
+  - [參考資源](#參考資源)
+  - [使用工具:](#使用工具)
+  - [Table of content](#table-of-content)
+  - [CMD指令:](#cmd指令)
+  - [基礎練習](#基礎練習)
+    - [變數名稱規則:](#變數名稱規則)
+    - [資料型態、所需的記憶體:](#資料型態所需的記憶體)
+    - [printf("控制字串", 參數);](#printf控制字串-參數)
+    - [scanf("控制字串", 參數);](#scanf控制字串-參數)
+  - [Ch01](#ch01)
+    - [低階語言](#低階語言)
+    - [高階語言](#高階語言)
+    - [OOP 物件導向 (Object Oriented Programming)](#oop-物件導向-object-oriented-programming)
+    - [Algorithm 演算法](#algorithm-演算法)
+  - [Ch02](#ch02)
+    - [Variable 變數](#variable-變數)
+    - [Combination rule](#combination-rule)
+    - [sizeof() -\> 讀取object記憶體大小](#sizeof---讀取object記憶體大小)
+    - [Literals](#literals)
+    - [Escape sequences 逃脫字元](#escape-sequences-逃脫字元)
+    - [遞迴](#遞迴)
+    - [console](#console)
+  - [Ch03](#ch03)
+    - [cin](#cin)
+    - [資料轉型](#資料轉型)
+    - [Control Structures 控制結構](#control-structures-控制結構)
+    - [Boolean Operator](#boolean-operator)
+  - [Other](#other)
+    - [直譯/編譯語言](#直譯編譯語言)
+      - [編譯語言](#編譯語言)
+      - [直譯語言](#直譯語言)
+
 ## CMD指令:
 
-1. where gcc -> 找出gcc.exe的位置
+1. ```where gcc``` -> 找出gcc.exe的位置
 
 ---
 
@@ -54,7 +89,7 @@
    Range: 3.4E-4932 ~ 1.1E+4932
 10. boolean: 8byte, true or false
 
-### printf("控制字串", 引述);
+### printf("控制字串", 參數);
 
 1. 整數: %d
 2. 浮點數: %f
@@ -63,10 +98,10 @@
 5. 字串: %s
 6. 換行: \n
 
-### scanf("控制字串", 引數);
+### scanf("控制字串", 參數);
 
 1. 控制字串: 可輸入多個變數 (多變數以空格區分)
-2. 引數: 把想儲存的變數名稱前加&符號
+2. 參數: 把想儲存的變數名稱前加&符號
 
 ## Ch01
 
@@ -122,13 +157,13 @@ identifiers要使用有意義的名稱
 
 ### Escape sequences 逃脫字元
 escape sequence char (character)
-* \n: 換行
-* \t: Tab
-* \\\\: \
-* \": "
-* \r: 游標移回行首，Carriage return
-* \a: 電腦的嗶聲
-* \0: 空白
+* ```\n``` : 換行
+* ```\t``` : Tab
+* ```\\``` : \
+* ```\"``` : "
+* ```\r``` : 游標移回行首，Carriage return
+* ```\a``` : 電腦的嗶聲
+* ```\0``` : 空白
 
 ### 遞迴
 1. Post increment: 後置遞
@@ -156,22 +191,22 @@ flow control主要有兩個方式:
 2. Repetition
 
 ### Boolean Operator
-1. &&: Logical **and**, example: x<5 && x<10
-2. ||: Logical **or**, example: x<5 || x<4
-3. !: Logical **not**, example: !(x<5 && x<10)
+1. ```&&``` : Logical **and**, example: x<5 && x<10
+2. ```||``` : Logical **or**, example: x<5 || x<4
+3. ```!``` : Logical **not**, example: !(x<5 && x<10)
 
 ## Other
 
 ### 直譯/編譯語言
 參考資料: [C++ 30天屠龍記](https://ithelp.ithome.com.tw/articles/10214510)
 
-#### **編譯語言**
+#### 編譯語言
 編譯語言會在執行程序時，先透過編譯器將程序編譯成電腦讀得懂的機器碼(machine language)，
 這個文件就是一個執行檔(Unix)，.exe (Windows)，多數為靜態語言
 
 代表: C/C++, R, Rust, Go, Visual Basic, Swift, Obj-C等
 
-#### **直譯語言**
+#### 直譯語言
 直譯語言的運行器會將一行一行的程式碼，先後編譯成機器碼，讓程序檢測更靈活(符合人性)，
 本身彈性更大，但緩慢的運行速度，是直譯語言的最大壞處，許多直譯語言的模塊，都是用編譯語言寫成，
 也被認為是Scripting Language
