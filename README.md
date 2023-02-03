@@ -62,8 +62,8 @@
 
 ### 變數名稱規則:
 
-1. 開頭必為英文字母
-2. 名稱中不能含有 .
+1. 開頭必為英文字母(大小寫分開判斷)
+2. 名稱中不能含有 `.`
 3. 不使用中文
 4. 不使用運算符&保留字元
 5. 名稱不超過255字元
@@ -71,26 +71,28 @@
 ### 資料型態、所需的記憶體:
 ※ 1byte=8bit
 1. char: 1byte
-2. unsigned int: 4byte, %u\
-   Range: 0 ~ 4294967295
-3. unsigned short int: 2byte, %hu\
-   Range: 0 ~ 65535
-4. short int: 2byte %hd\
-   Range: -32768 ~ 32767
-5. int: 4byte (Normally), %d\
-   Range: -2147483648~2147483647
-6. long int: 4byte, %ld\
-   Range: -2147483648~2147483647
-7. float: 4byte, %f\
-   Range: 1.2E-38 ~ 3.4E+38
-8. double: 8byte, %lf\
-   Range: 1.7E-308 ~ 1.7E+308
-9. long double: 16byte, %Lf\
-   Range: 3.4E-4932 ~ 1.1E+4932
+2. unsigned int: 4byte, %u
+   * Range: 0 ~ 4294967295
+3. unsigned short int: 2byte, %hu
+   * Range: 0 ~ 65535
+4. short int: 2byte %hd
+   * Range: -32768 ~ 32767
+5. int: 4byte (Normally), %d
+   * Range: -2147483648~2147483647
+6. long int: 4byte, %ld
+   * Range: -2147483648~2147483647
+7. float: 4byte, %f
+   * Range: 1.2E-38 ~ 3.4E+38
+8. double: 8byte, %lf
+   * Range: 1.7E-308 ~ 1.7E+308
+9.  long double: 16byte, %Lf
+    * Range: 3.4E-4932 ~ 1.1E+4932
 10. boolean: 8byte, true or false
 
-### printf("控制字串", 參數);
-
+### printf
+```C++
+printf("控制字串", 參數);
+```
 1. 整數: %d
 2. 浮點數: %f
 3. 倍精度浮點數: %lf
@@ -98,8 +100,10 @@
 5. 字串: %s
 6. 換行: \n
 
-### scanf("控制字串", 參數);
-
+### scanf
+```C++
+scanf("控制字串", 參數);
+```
 1. 控制字串: 可輸入多個變數 (多變數以空格區分)
 2. 參數: 把想儲存的變數名稱前加&符號
 
@@ -120,9 +124,9 @@ Introduction to Computers and Programming
 1. 資料物件: 把許多資料，組裝成一個整體來看
 
 ### Algorithm 演算法
-```
-定義: Step by step sequence of instruction, 一步一步的指令序列
-```
+
+> 定義: Step by step sequence of instruction, 一步一步的指令序列
+
 流程:
 1. Terminal 端點: 開始或結束點
 2. Input/Output(I/O): 輸入輸出
@@ -148,10 +152,15 @@ Introduction to Computers and Programming
 identifiers要使用有意義的名稱
 * Case sensitivity: 敏感的語言，大小寫英文都視為相同變數，例如: C++, Python, Java
 
-### sizeof() -> 讀取object記憶體大小
+### sizeof
+```c++
+// 讀取object記憶體大小
+sizeof(Variable)
+```
 
 ### Literals
-解釋: 常數，包含數值、字元、字串，在程式裡不會改變的，都稱之為常數
+解釋:
+> 常數，包含數值、字元、字串，在程式裡不會改變的，都稱之為常數
 
 稱為Literal的原因: Programming literal type
 

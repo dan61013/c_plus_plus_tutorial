@@ -1,7 +1,3 @@
-// 家览笲衡
-// 羆琌耕计埃耕计
-// 讽ㄤい计跑Θ0计碞琌程そ计
-
 #include <iostream>
 using namespace std;
 

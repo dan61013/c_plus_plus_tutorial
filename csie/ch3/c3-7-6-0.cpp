@@ -1,4 +1,3 @@
-// Â÷¶}°j°é while Break;
 #include <iostream>
 using namespace std;
 

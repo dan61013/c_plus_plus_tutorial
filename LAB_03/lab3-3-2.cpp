@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-// ­×§ïlab_03_03.cpp±ø¥ó¡Aand -> or
 int main() {
     int x;
     cout << "Please enter one number: " << endl;

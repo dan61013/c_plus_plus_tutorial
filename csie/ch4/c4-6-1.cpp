@@ -1,4 +1,3 @@
-// ¸Ñµª
 #include <iostream>
 using namespace std;
 

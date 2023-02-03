@@ -1,7 +1,4 @@
-/*
-ÃD¥Ø - §PÂ_­¿¼Æ
-https://www.csie.ntu.edu.tw/~b98902112/cpp_and_algo/cpp/practice_is_multiple.html
-*/
+// https://www.csie.ntu.edu.tw/~b98902112/cpp_and_algo/cpp/practice_is_multiple.html
 #include <iostream>
 using namespace std;
 
