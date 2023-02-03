@@ -187,6 +187,7 @@ escape sequence char (character)
 ### cin
 * 與cin搭配: Extraction operator
 * 讓使用者能夠清楚知道目前的I/O，Maximize user friendly Input Output
+* cin / cou array時，C++會自動在最後一個字元加上`'\0'`來標記結束
 
 ### 資料轉型
 1. Type coercion: 自動轉型
