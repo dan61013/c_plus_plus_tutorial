@@ -205,6 +205,28 @@ flow control主要有兩個方式:
 2. ```||``` : Logical **or**, example: x<5 || x<4
 3. ```!``` : Logical **not**, example: !(x<5 && x<10)
 
+---
+
+## Ch04
+string.h函式庫
+* 只適用於char array
+
+### strlen()
+功能: 得到字串長度
+* 回傳值: int (代表陣列長度)
+* 是不包含`'\0'`的長度
+* 通常搭配for迴圈使用
+
+### strcmp()
+功能: 比較字典順序
+* `strcmp(string_01, string_02)`
+* 回傳值: int (結果值)
+* string_01比string_02順序
+  * 較前: `-1`
+  * 相同: `0`
+  * 較後: `-1`
+* 常用於判斷兩個字串是否相同
+
 ## Other
 
 ### 直譯/編譯語言

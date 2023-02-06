@@ -21,9 +21,35 @@ void get_str_len()
     }
 }
 
+void str_order_compare()
+{
+    char s1[100], s2[100];
+    int result;
+
+    while(cin >> s1 >> s2)
+    {
+        result = strcmp(s1, s2);
+
+        if(result == -1)
+        {
+            cout << "順序正確" << endl;
+        }
+        if(result == 0)
+        {
+            cout << "兩字完全相同" << endl;
+        }
+        if(result == 1)
+        {
+            cout << "順序相反" << endl;
+        }
+    }
+}
+
 int main()
 {
-    get_str_len();
+    // get_str_len();
+
+    str_order_compare();
 
     return 0;
 }
