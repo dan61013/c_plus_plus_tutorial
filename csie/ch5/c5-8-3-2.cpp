@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-int cin_peek()
+void cin_peek()
 {
     string s;
     char c;
@@ -25,7 +25,7 @@ int cin_peek()
     }
 }
 
-int cin_getline()
+void cin_getline()
 {
     char s[105];
 
