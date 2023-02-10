@@ -23,12 +23,12 @@
   - [參考資源](#參考資源)
   - [使用工具:](#使用工具)
   - [Table of content](#table-of-content)
-  - [CMD指令:](#cmd指令)
+  - [CMD指令](#cmd指令)
   - [基礎練習](#基礎練習)
     - [變數名稱規則:](#變數名稱規則)
     - [資料型態、所需的記憶體:](#資料型態所需的記憶體)
-    - [printf("控制字串", 參數);](#printf控制字串-參數)
-    - [scanf("控制字串", 參數);](#scanf控制字串-參數)
+    - [printf](#printf)
+    - [scanf](#scanf)
   - [Ch01](#ch01)
     - [低階語言](#低階語言)
     - [高階語言](#高階語言)
@@ -37,7 +37,7 @@
   - [Ch02](#ch02)
     - [Variable 變數](#variable-變數)
     - [Combination rule](#combination-rule)
-    - [sizeof() -\> 讀取object記憶體大小](#sizeof---讀取object記憶體大小)
+    - [sizeof](#sizeof)
     - [Literals](#literals)
     - [Escape sequences 逃脫字元](#escape-sequences-逃脫字元)
     - [遞迴](#遞迴)
@@ -47,12 +47,15 @@
     - [資料轉型](#資料轉型)
     - [Control Structures 控制結構](#control-structures-控制結構)
     - [Boolean Operator](#boolean-operator)
+  - [Ch04](#ch04)
+    - [strlen()](#strlen)
+    - [strcmp()](#strcmp)
   - [Other](#other)
     - [直譯/編譯語言](#直譯編譯語言)
       - [編譯語言](#編譯語言)
       - [直譯語言](#直譯語言)
 
-## CMD指令:
+## CMD指令
 
 1. ```where gcc``` -> 找出gcc.exe的位置
 
