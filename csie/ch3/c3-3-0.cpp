@@ -1,4 +1,4 @@
-// «Å§iÅÜ¼Æ
+// variable & print(cout)
 #include <iostream>
 using namespace std;
 

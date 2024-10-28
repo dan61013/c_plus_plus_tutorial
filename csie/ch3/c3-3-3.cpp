@@ -1,4 +1,4 @@
-// 多項式計算
+// revise the variable value
 #include <iostream>
 using namespace std;
 
