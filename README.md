@@ -13,11 +13,9 @@
 ## 使用工具
 
 1. Visual Stdio Code
-2. [下載MinGW Installer](https://zh-tw.osdn.net/projects/mingw/releases/68260)
-   1. 將 **C:\MinGW\bin** 加入Windows環境變數
-   2. 設定c_cpp_properties.json，在打開cpp檔案時，按F1，輸入: ```C/C++: Edit Configurations (UI)```，編譯器路徑選擇：../g++.exe 的選項，IntelliSense 模式 選擇：gcc-x64 的選項
-   3. 設定tasks.json，按F1，於命令列輸入: ```Tasks: Configure Default Build Task```，然後選擇: C/C++ g++.exe 建置使用中檔案，即可完成設定
-   4. 設定launch.json，按F5，選擇: g++.exe 建置及偵錯使用中的檔案。即可完成所有設定並開始 compile code and show printf message on cmd
+2. 下載並解壓縮[MinGW-w64](https://www.mingw-w64.org/downloads/#pre-built-toolchains-and-packages)
+   1. 選擇[LLVM-MinGW](https://github.com/mstorsjo/llvm-mingw/releases)
+   2. 將解壓縮後的資料夾路徑加入到Windows環境變數
 3. [CodeRunner](https://marketplace.visualstudio.com/items?itemName=formulahendry.code-runner): 使用`Ctrl + N`就可以進行編譯
 
 ---
@@ -54,6 +52,8 @@
   - [Chapter 04](#chapter-04)
     - [4-1 strlen](#4-1-strlen)
     - [4-2 strcmp](#4-2-strcmp)
+  - [Chapter 05 Variable](#chapter-05-variable)
+  - [Chapter 06 Conversion](#chapter-06-conversion)
   - [Other](#other)
     - [直譯\&編譯語言](#直譯編譯語言)
       - [編譯語言](#編譯語言)
@@ -110,6 +110,8 @@ Format string:
 - 字元: `%c`
 - 字串: `%s`
 - 換行: `\n`
+
+※ 透過Terminal可以將`cout`的訊息輸出到`.txt`檔案中: `.\main.ext > main.txt`
 
 ### scanf
 
@@ -267,6 +269,47 @@ strcmp(string_01, string_02)
   - Equal -> 0
   - `string_01` < `string_02` -> -1
 - 常用於判斷兩個字串是否相同
+
+## Chapter 05 Variable
+
+與C語言相同，C++的變數宣告都是先指定data type，且可以透過**指定運算子**(Assignment Operator)進行賦值。
+
+Example:
+
+```C++
+int age = 18;
+```
+
+## Chapter 06 Conversion
+
+Ref: [arithmetic.cpp](./open_home_learn/arithmetic.cpp)
+
+主要的型態轉換有2種:
+
+- Implicit conversion (隱性轉換): 在多種型態的計算中，長度較長的data type會成為目標型態，較小的型態都會成為目標型態。
+  
+  Example:
+
+  ```C++
+  int num = 20;
+  cout << num / 3;
+  ```
+
+- Explicit conversion (顯性轉換): 加上轉型語法(cast)進行強制轉換data type，針對不同使用情形，設計了4種轉型方式:
+  - static_cast
+
+    Example:
+
+    ```C++
+    int x = 20;
+    int y = 3;
+    // 轉換成double
+    cout << static_cast<double>(a) / b;
+    ```
+
+  - const_cast
+  - reinterpret_cast
+  - dynamic_cast
 
 ## Other
 
