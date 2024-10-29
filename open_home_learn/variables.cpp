@@ -32,5 +32,25 @@ int main() {
     const double PI = 3.14159;
     // PI = 3.14;
 
+    // constexpr
+    constexpr int A = 10;
+    constexpr int B = sizeof(10);
+    constexpr int C = sizeof(B);
+    // variables.cpp:39:27: error: call to non-'constexpr' function 'int rand()'
+    // constexpr int D = rand();
+    cout << "A: " << A << endl;
+    cout << "B: " << B << endl;
+    cout << "C: " << C << endl;
+
+    // unsigned
+    unsigned int i;
+
+    auto myChar = "D";
+    cout << myChar << endl;
+    
+    // Error if didn't give the value
+    // variables.cpp:52:5: error: declaration of 'auto myNumber' has no initializer
+    // auto myNumber;
+
     return 0;
 }
