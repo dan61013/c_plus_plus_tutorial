@@ -7,6 +7,7 @@
 3. [交大 - 計算機概論與程式設計 Introduction to Computers and Programming](http://ocw.nctu.edu.tw/course_detail.php?bgid=0&gid=0&nid=192)
 4. [C++](https://www.csie.ntu.edu.tw/~b98902112/cpp_and_algo/index.html)
 5. [語言技術:C++ Gossip](https://openhome.cc/Gossip/CppGossip/)
+6. [cplusplus tutorial](https://cplusplus.com/doc/tutorial/)
 
 ---
 
