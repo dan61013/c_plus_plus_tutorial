@@ -3,11 +3,12 @@
 ## 參考資源
 
 1. [VScode安裝C/C++教學](https://leolistudio.com/how-to-use-vscode-write-cpp/)
-2. [C++與演算法](https://www.csie.ntu.edu.tw/~b98902112/cpp_and_algo/index.html)
-3. [交大 - 計算機概論與程式設計 Introduction to Computers and Programming](http://ocw.nctu.edu.tw/course_detail.php?bgid=0&gid=0&nid=192)
-4. [C++](https://www.csie.ntu.edu.tw/~b98902112/cpp_and_algo/index.html)
+2. [~~C++與演算法~~](https://www.csie.ntu.edu.tw/~b98902112/cpp_and_algo/index.html)
+3. [~~交大 - 計算機概論與程式設計 Introduction to Computers and Programming~~](http://ocw.nctu.edu.tw/course_detail.php?bgid=0&gid=0&nid=192)
+4. [~~C++~~](https://www.csie.ntu.edu.tw/~b98902112/cpp_and_algo/index.html)
 5. [語言技術:C++ Gossip](https://openhome.cc/Gossip/CppGossip/)
 6. [cplusplus tutorial](https://cplusplus.com/doc/tutorial/)
+7. [山姆大叔談 C++：從歷史談起，再給個定義—Modern C++ 解惑](https://ithelp.ithome.com.tw/users/20120425/ironman/2507)
 
 ---
 
@@ -55,6 +56,8 @@
     - [4-2 strcmp](#4-2-strcmp)
   - [Chapter 05 Variable](#chapter-05-variable)
   - [Chapter 06 Conversion](#chapter-06-conversion)
+  - [Chapter 07 Logical Operation](#chapter-07-logical-operation)
+    - [7-1 xor](#7-1-xor)
   - [Other](#other)
     - [直譯\&編譯語言](#直譯編譯語言)
       - [編譯語言](#編譯語言)
@@ -311,6 +314,17 @@ Ref: [arithmetic.cpp](./open_home_learn/arithmetic.cpp)
   - const_cast
   - reinterpret_cast
   - dynamic_cast
+
+## Chapter 07 Logical Operation
+
+### 7-1 xor
+
+xor按照步驟解說([logical.cpp](./open_home_learn/logical.cpp))
+
+1. `ch = 'A'` : A在ASCII碼中代表的值為**65**
+2. `ch = ch ^ 0x7` : 十六進制的0x7代表的是7，轉換成二進制為`00000111`，而`A`的二進制為`01000001`，做xor比較得到`01000110`，換成十進制則為`2+4+2^6=6+64=70`，換成ASCII碼則為`F`。
+3. 將`01000110`與`00000111`(0x7)做xor，則得到`01000001`，也就是原本的`A`。
+4. 因此使用相同數值進行xor，可以進行簡單的encode & decode。
 
 ## Other
 
